@@ -9,11 +9,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 @font-face {
 	font-family: alien;
-	src: url(/assets/fonts/alien_lines/Alien_lines_1.9.ttf);
+	src: url(../fonts/alien_lines/Alien_lines_1.9.ttf);
 }
 @font-face {
 	font-family: alien2;
-	src: url(/assets/fonts/Alien2/Glipervelz-Origy\ FULL.ttf);
+	src: url(../fonts/Alien2/Glipervelz-Origy\ FULL.ttf);
 }
 
 body {
@@ -39,11 +39,11 @@ p{
 	color: #7df9ff;
 }
 
-main, .c {
+main, .banner-container {
 	max-width: 100vw;
 	overflow-x: hidden;
 }
-.c {
+.banner-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -58,12 +58,12 @@ main, .c {
 	z-index: -1
 }
 
-.c h1 {
+.banner-container h1 {
 	margin: 0;
 	font-size: 120px;
 }
 
-.c h3 {
+.banner-container h3 {
 	margin: 0;
 	opacity: 0.75;
 	font-size: 60px;
@@ -90,18 +90,33 @@ main h3{
 	margin: auto;
 }
 
+.image {
+	padding: 0;
+	border-radius: 100px;
+	box-shadow: inset 0 0 20px 20px #000;
+	background: url(../images/earth-g2da1ddb4f_1920.jpg) center no-repeat;
+	background-size: 100%;
+}
+
 img.side {
 	width: 100%;
 	padding: 0;
 }
 
-/* .inner-shadow{
-	box-shadow: inset 15px 15px 40px 40px #000;
-} */
+.inner-shadow {
+	box-shadow: inset 0 0 2em red
+} 
+.inner-shadow::before {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: orange
+}
 
 .card{
 	background-color: #000;
-	height: 55vh;
+	min-height: 55vh;
 	width: 100vw;
 }
 
