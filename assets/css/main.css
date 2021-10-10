@@ -1,3 +1,11 @@
+/* Les couleurs: 
+#dc3545 (rouge) 
+#198754(vert)
+#ffc107(jaune)
+#7952b3(violet)
+#343a40(noir)
+#f8f9fa(blanc) */
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 
 body {
@@ -38,4 +46,12 @@ body {
 	height: 100vh;
 	margin-top: 100vh;
 	background: linear-gradient(to bottom, transparent, #000 100%, #000 70%)
+}
+
+.container {
+	background-color: #f8f9fa;
+}
+
+.full-card.container.row div{
+	margin: 0 auto;
 }
