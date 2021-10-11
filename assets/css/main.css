@@ -52,7 +52,7 @@ main, .banner-container {
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	background: url(../images/saturn.jpg) center 0 no-repeat;
+	background: orange url(../images/saturn.jpg) center 0 no-repeat;
 	background-size: 120%;
 	color: #fff;
 	z-index: -1
@@ -60,13 +60,13 @@ main, .banner-container {
 
 .banner-container h1 {
 	margin: 0;
-	font-size: 120px;
+	font-size: 7vw
 }
 
 .banner-container h3 {
 	margin: 0;
 	opacity: 0.75;
-	font-size: 60px;
+	font-size: 4vw
 }
 
 main h3{
