@@ -1,3 +1,10 @@
+<!--
+	CENTAURY, aerospace corporation / Bootstrap Example Landing Page
+	GitHub repository: https://github.com/matteoo34/CENTAURY
+	Made by Victor Odin and Mattéo Legagneux
+	Copyright (C) 2021
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,14 +17,53 @@
 		<!-- JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-		<title>Space 2077</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/header.css">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" href="favicon.ico">
+		<title>Accueil • CENTAURY</title>
 	</head>
 
 	<body>
-		<div class="banner-container">
-			<h1 class="title">Space 2077</h1>
-			<h3>Get to know space</h3>
-		</div>
+		<!-- Header -->
+		<header class="container-fluid">
+			<nav class="navbar navbar-expand-xl navbar-light row">
+				<!-- Navbar logo and brand -->
+				<div class="brand col-4 d-flex align-items-center">
+					<a href="index.html" class="navbar-brand">Accueil</a>
+				</div>
+				<!-- Navbar links -->
+				<div class="nav col-8 d-none d-md-block text-end">
+					<a href="#presentation-title" class="nav-link">Présentation</a>
+					<a href="#ice-creams-title" class="nav-link">Planètes</a>
+					<a href="#desserts-title" class="nav-link">Satellites</a>
+					<a href="#contact-title" class="nav-link">Contact</a>
+				</div>
+				<!-- Dropdown menu toggle button -->
+				<div class="col-8 d-block d-md-none text-end">
+					<button class="navbar-toggler test" type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target=".navbar-collapse" 
+					aria-controls="navbar-collapse" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<!-- Dropdown menu -->
+				<div class="collapse navbar-collapse">
+					<a href="#presentation-title" class="nav-link">Présentation</a>
+					<a href="#ice-creams-title" class="nav-link">Planètes</a>
+					<a href="#desserts-title" class="nav-link">Satellites</a>
+					<a href="#contact-title" class="nav-link">Contact</a>
+				</div>
+			</nav>
+		</header>
+
+		<section class="banner-container">
+			<h1 class="title">Envie de voyager ?</h1>
+			<h3>N'attendez plus.</h3>
+			<h3>L'espace vous attend.</h3>
+		</section>
 
 		<main>
 			<div class="d container-fluid text-center">
