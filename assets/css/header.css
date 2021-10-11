@@ -24,7 +24,7 @@ header {
 	opacity: 1;
 	color: #fff
 }
-.nav .nav-link:after {
+.nav .nav-link::after {
 	content: "";
 	width: 0;
 	height: 1px;
@@ -34,7 +34,7 @@ header {
 	background-color: #fff;
 	transition-duration: 0.4s
 }
-.nav .nav-link:hover:after {width: 100%}
+.nav .nav-link:hover::after {width: 100%}
 
 /* Dropdown menu links */
 
