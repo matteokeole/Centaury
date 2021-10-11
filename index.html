@@ -5,6 +5,12 @@
 	Copyright (C) 2021
 -->
 
+<!--
+	TO-DO
+	Changer point media (Bootstrap md/lg)
+	Arrière-plan footer plus sombre ? (par exemple #333, border-top: 1px solid rgba(255, 255, 255, 0.1))
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -17,6 +23,8 @@
 		<!-- JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/banner.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -27,17 +35,17 @@
 	<body>
 		<!-- Header -->
 		<header class="container-fluid">
-			<nav class="navbar navbar-expand-xl navbar-light row">
+			<nav class="navbar navbar-expand-xl row">
 				<!-- Navbar logo and brand -->
 				<div class="brand col-4 d-flex align-items-center">
-					<a href="index.html" class="navbar-brand">Accueil</a>
+					<a href="index.html" class="nav-link">Accueil</a>
 				</div>
 				<!-- Navbar links -->
 				<div class="nav col-8 d-none d-md-block text-end">
-					<a href="#presentation-title" class="nav-link">Présentation</a>
-					<a href="#ice-creams-title" class="nav-link">Planètes</a>
-					<a href="#desserts-title" class="nav-link">Satellites</a>
-					<a href="#contact-title" class="nav-link">Contact</a>
+					<a href="#" class="nav-link">Présentation</a>
+					<a href="#" class="nav-link">Planètes</a>
+					<a href="#" class="nav-link">Satellites</a>
+					<a href="#" class="nav-link">Contact</a>
 				</div>
 				<!-- Dropdown menu toggle button -->
 				<div class="col-8 d-block d-md-none text-end">
@@ -47,92 +55,107 @@
 					aria-controls="navbar-collapse" 
 					aria-expanded="false" 
 					aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+						Menu
 					</button>
 				</div>
 				<!-- Dropdown menu -->
 				<div class="collapse navbar-collapse">
-					<a href="#presentation-title" class="nav-link">Présentation</a>
-					<a href="#ice-creams-title" class="nav-link">Planètes</a>
-					<a href="#desserts-title" class="nav-link">Satellites</a>
-					<a href="#contact-title" class="nav-link">Contact</a>
+					<a href="#" class="dropdown-link">Présentation</a>
+					<a href="#" class="dropdown-link">Planètes</a>
+					<a href="#" class="dropdown-link">Satellites</a>
+					<a href="#" class="dropdown-link">Contact</a>
 				</div>
 			</nav>
 		</header>
 
+		<!-- Banner -->
 		<section class="banner-container">
-			<h1 class="title">Envie de voyager ?</h1>
-			<h3>N'attendez plus.</h3>
-			<h3>L'espace vous attend.</h3>
+			<img src="assets/images/saturn.jpg" class="banner-image w-100">
+			<div class="banner-title">
+				<h1 class="title">CENTAURY</h1>
+				<h3>&lt;insert desc&gt;</h3>
+			</div>
+			<div class="scroll-down">
+				<ion-icon name="chevron-down"></ion-icon>
+			</div>
 		</section>
 
-		<main class="wrapper">
+		<!-- Main content -->
+		<main>
+			<div class="scroll-line">
+				<div class="scroll-ball"></div>
+			</div>
 			<div class="card-container container-fluid">
 				<div class="container row">
-					<div class="col-12 col-md-6">
+					<div class="image col-12 col-md-6">
 						<img src="assets/images/rework1.png" class="w-100" alt="">
 					</div>
-					<div class="card col-12 col-md-6 align-self-center text-end">
-						<h3>Lorem ipsum dolor sit amet.</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam alias aperiam id ducimus minima animi voluptates, at corporis quo
-							repudiandae architecto! Quisquam illum molestias id pariatur, assumenda ipsam maiores sit sint totam obcaecati, ratione quam dolores 
-							quaerat voluptatem ea minus eligendi fugit culpa impedit?
-						</p>
-						<div class="link text-end"><a href="#">En savoir plus</a></div>
+					<div class="card col-12 col-md-6 align-self-center">
+						<div class="card-inner text-end">
+							<h3>Mercure</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, doloribus. Quam quae, nisi modi mollitia expedita error rerum odit non placeat aut esse, nam? Rem, unde voluptate veritatis fugit quo.
+								Quod exercitationem consequatur tempore autem, molestiae saepe id eos provident at. Minima, voluptates! Incidunt, molestiae fugit sunt temporibus recusandae odit provident odio nobis voluptatibus expedita, suscipit impedit totam sint, iusto?
+							</p>
+							<div class="link text-start"><a href="#">En savoir plus</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="card-container container-fluid">
 				<div class="container row">
-					<div class="card col-12 col-md-6 align-self-center text-start">
-						<h3>Lorem ipsum dolor sit amet.</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam alias aperiam id ducimus minima animi voluptates, at corporis quo
-							repudiandae architecto! Quisquam illum molestias id pariatur, assumenda ipsam maiores sit sint totam obcaecati, ratione quam dolores 
-							quaerat voluptatem ea minus eligendi fugit culpa impedit?
-						</p>
-						<div class="link text-start"><a href="#">En savoir plus</a></div>
+					<div class="image col-12 col-md-6 order-switcher">
+						<img src="assets/images/rework2.png" class="w-100" alt="">
 					</div>
-					<div class="col-12 col-md-6 order-switcher align-self-center">
-						<img src="assets/images/black-hole-g68cd75be6_1920.jpg" class="w-100" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="card-container container-fluid">
-				<div class="container row">
-					<div class="col-12 col-md-6 align-self-center">
-						<img src="assets/images/saturn-ga4328724c_1920.png" class="w-100" alt="">
-					</div>
-					<div class="card col-12 col-md-6 align-self-center text-end">
-						<h3>Lorem ipsum dolor sit amet.</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam alias aperiam id ducimus minima animi voluptates, at corporis quo
-							repudiandae architecto! Quisquam illum molestias id pariatur, assumenda ipsam maiores sit sint totam obcaecati, ratione quam dolores 
-							quaerat voluptatem ea minus eligendi fugit culpa impedit?
-						</p>
-						<div class="link text-end"><a href="#">En savoir plus</a></div>
+					<div class="card col-12 col-md-6 align-self-center">
+						<div class="card-inner text-start">
+							<h3>Mars</h3>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis possimus voluptates tenetur fuga veniam veritatis reprehenderit id, voluptatibus nam maiores totam? Obcaecati ex rem, mollitia neque? Ipsum, rerum, ducimus.
+								Suscipit mollitia, veritatis dolore eaque, ut sunt facilis dicta nostrum soluta totam sequi? Odit praesentium earum eaque sequi error a nobis. Quia, consequatur? Autem aperiam illum sint quasi facilis dolorum.
+							</p>
+							<div class="link text-end"><a href="#">En savoir plus</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="card-container container-fluid">
 				<div class="container row">
-					<div class="card col-12 col-md-6 align-self-center text-start">
-						<h3>Lorem ipsum dolor sit amet.</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam alias aperiam id ducimus minima animi voluptates, at corporis quo
-							repudiandae architecto! Quisquam illum molestias id pariatur, assumenda ipsam maiores sit sint totam obcaecati, ratione quam dolores 
-							quaerat voluptatem ea minus eligendi fugit culpa impedit?
-						</p>
-						<div class="link text-start"><a href="#">En savoir plus</a></div>
+					<div class="image col-12 col-md-6">
+						<img src="assets/images/rework3.png" class="w-100" alt="">
 					</div>
-					<div class="col-12 col-md-6 order-switcher align-self-center">
-						<img src="assets/images/isolated-gae636ec4c_1920.png" class="w-100" alt="">
+					<div class="card col-12 col-md-6 align-self-center">
+						<div class="card-inner text-end">
+							<h3>Triton</h3>
+							<p>
+								Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Perferendis neque esse deserunt, corrupti quae, ipsum ipsa nostrum exercitationem enim facilis blanditiis ea asperiores porro suscipit? Reprehenderit amet explicabo obcaecati labore?
+								Rerum, repudiandae tempore enim officia, impedit excepturi commodi a quod atque sapiente aut sint eius ad autem fugit recusandae, possimus eaque non fugiat expedita. Tempora reprehenderit iste reiciendis commodi laborum.
+							</p>
+							<div class="link text-start"><a href="#">En savoir plus</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-container container-fluid">
+				<div class="container row">
+					<div class="image col-12 col-md-6 order-switcher">
+						<img src="assets/images/rework4.png" class="w-100" alt="">
+					</div>
+					<div class="card col-12 col-md-6 align-self-center">
+						<div class="card-inner text-start">
+							<h3>Jupiter</h3>
+							<p>
+								Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quasi natus ea, quibusdam? Non cupiditate quos debitis, at nulla soluta! Est aspernatur pariatur id, voluptatum libero harum error inventore maiores blanditiis!
+								Ad mollitia ipsam pariatur totam eos tenetur cum, maxime, commodi cupiditate saepe, incidunt? Illum vel nam voluptatum, laborum, quis neque rerum quia enim atque illo aliquam, cumque earum perspiciatis, qui.
+							</p>
+							<div class="link text-end"><a href="#">En savoir plus</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 
+		<!-- Footer -->
 		<footer>
 			<div class="container-fluid row text-center">
 				<div class="col-12 col-md-3">
@@ -163,12 +186,15 @@
 			</div>
 			<div class="col-12 text-center">
 				<p>
-					&copy; S-keyp n Mattéo 
+					&copy; S-keyp & jettrebibeme
 				</p>
-
 			</div>
 		</footer>
+
+		<!-- Scripts -->
 		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
 
 </html>

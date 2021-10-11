@@ -14,7 +14,10 @@ footer div{
 }
 
 footer ul {
+	list-style-type: none;
 	display: inline;
+	margin: 0;
+	padding: 0;
 }
 footer ul li {
 	display: block;

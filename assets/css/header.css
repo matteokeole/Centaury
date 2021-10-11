@@ -1,30 +1,23 @@
-/* Header & navbar */
+/** Header & navbar **/
 
 header {
+	top: 0;
 	position: fixed;
-	z-index: 1
-}
-
-/* Navbar  brand */
-.navbar-brand {
-	margin-left: 15px;
-	color: #fff !important;
-	text-align: center;
 	user-select: none;
-	font-size: 24px
+	z-index: 2
 }
 
 /* Navbar links */
 
-.nav .nav-link {
+.nav-link {
 	display: inline;
 	margin: 0 10px;
 	padding: 8px 2px;
 	position: relative;
 	opacity: 1;
-	color: #fff
+	color: #fff !important
 }
-.nav .nav-link::after {
+.nav-link::after {
 	content: "";
 	width: 0;
 	height: 1px;
@@ -34,19 +27,25 @@ header {
 	background-color: #fff;
 	transition-duration: 0.4s
 }
-.nav .nav-link:hover::after {width: 100%}
+.nav-link:hover::after {width: 100%}
+
+/* Dropdown menu button */
+
+.navbar-toggler {
+	border-color: none !important;
+	color: #fff;
+	font-size: 1rem
+}
 
 /* Dropdown menu links */
 
-.navbar-collapse .nav-link {
+.dropdown-link {
 	display: block;
+	margin: 0 10px;
+	padding: 8px 2px;
+	position: relative;
 	opacity: 0.65;
-	color: #fff
+	color: #fff !important;
+	text-decoration: none
 }
-.navbar-collapse .nav-link:hover {opacity: 1}
-
-.navbar-toggler {
-	border-color: transparent !important;
-	-webkit-filter: invert(1);
-	filter: invert(1)
-}
+.dropdown-link:hover {opacity: 1}

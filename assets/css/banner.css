@@ -1,0 +1,51 @@
+/** Banner content **/
+
+.banner-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	position: fixed;
+	background: indianred url(../images/saturn.jpg) center 0 no-repeat;
+	background-size: 120%
+}
+
+.banner-image {visibility: hidden} /* Mask the banner image element */
+
+.banner-title {
+	position: absolute;
+	color: #fff;
+	text-align: center
+}
+
+.banner-title h1 {
+	font-size: 7vw;
+	font-weight: 600
+}
+
+.banner-title h3 {
+	color: #ddd;
+	font-size: 4vw
+}
+
+.scroll-down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0
+}
+
+.scroll-down ion-icon {
+	opacity: 0.5;
+	color: #fff;
+	font-size: 30px;
+	-webkit-animation: levitate 3s infinite;
+	animation: levitate 3s infinite
+}

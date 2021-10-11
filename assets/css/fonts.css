@@ -1,0 +1,13 @@
+/** Fonts import **/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"); /* Rubik 400, 600 */
+/* Alien */
+@font-face {
+	font-family: Alien;
+	src: url(../fonts/alien_lines/Alien_lines_1.9.ttf)
+}
+/* Alien 2 */
+@font-face {
+	font-family: Alien2;
+	src: url(../fonts/Alien2/Glipervelz-Origy\ FULL.ttf)
+}
