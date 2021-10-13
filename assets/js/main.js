@@ -1,6 +1,6 @@
 const bannerContainer = document.querySelector(".banner-container"),
 main = document.querySelector("main"),
-scrollBall = document.querySelector(".scroll-ball");
+scrollBall = document.querySelector(".scroll-ball"),
 animate = function() {
 	let calc = this.scrollY / this.innerHeight;
 	if (this.scrollY < this.innerHeight) {
@@ -10,6 +10,9 @@ animate = function() {
 	} else {
 		bannerContainer.style.visibility = "hidden"
 	}
+	// Animated scroll ball
+	let scroll = (this.scrollY - calcBannerHeight());
+	scrollBall.style.top = `${scroll + 200}px`
 },
 calcBannerHeight = function() {
 	// Calculate the banner height
@@ -19,13 +22,8 @@ resize = function() {
 	// Adapt the position of the main element with the banner height
 	main.style.marginTop = `${calcBannerHeight()}px`
 };
-
 resize();
 // Event listeners
 window.addEventListener("resize", resize);
 window.addEventListener("load", animate);
-window.addEventListener("scroll", function() {
-	animate();
-	let scroll = (this.scrollY - calcBannerHeight());
-	scrollBall.style.top = `${scroll + 200}px`
-})
+window.addEventListener("scroll", animate)
