@@ -22,26 +22,28 @@ main {
 	background: linear-gradient(to bottom, transparent, #000 100%, #000 70%)
 }
 
-/* Scroll line with animated space shuttle icon */
+/* Vertical scroll line */
+
 .scroll-line {
 	display: flex;
 	justify-content: center;
 	width: 1px;
 	height: 100%;
-	margin: 0 auto;
+	margin: auto;
 	right: 0;
 	left: 0;
 	position: absolute;
 	background: linear-gradient(to bottom, transparent, #333 20%)
 }
 
+/* Animated scroll icon */
 .scroll-ball {
 	width: 11px;
 	height: 11px;
 	position: absolute;
 	border-radius: 50%;
 	background-color: #333;
-	transition-duration: 0.03s
+	transition: ease 0.1s
 }
 
 .card-container {margin-top: 100px}
@@ -55,8 +57,7 @@ main {
 	position: relative;
 	user-select: none;
 	-webkit-animation: levitate 8s infinite;
-	animation: levitate 8s infinite;
-	z-index: 0
+	animation: levitate 8s infinite
 }
 
 /* Card content */
