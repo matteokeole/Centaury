@@ -1,5 +1,4 @@
-/** Footer **/
-
+/* Footer */
 footer {
 	background-color: #141414;
 	color: #f8f9fa;
@@ -12,9 +11,11 @@ footer {
 footer a {
 	color: #f8f9fa !important;
 	text-decoration: none;
-
+	display: block;
+	width: 100%;
 }
-footer div{
+
+footer>div{
 	justify-content: space-between;
 	margin: 0;
 	padding-bottom: 15px;
@@ -39,7 +40,9 @@ footer ul {
 footer ul li {
 	display: block;
 	padding: 0.3rem;
+	transition: all 500ms;
 }
+
 footer ul li:nth-child(odd) {
 	transform:rotate(180deg);
 }
@@ -47,20 +50,19 @@ footer ul li:nth-child(odd) {
 footer ul li:hover {
 	cursor: pointer;
 	background-color: #318085d3;
-	color: #343a40;
-	opacity: .5;
-	border-radius: 5px;
+	color: #fff !important;
+	opacity: .75;
+	border-radius: 7px;
 	box-shadow: 0px 0px 20px 3px #dbedee;
-	transition: all 500ms;
+	
+}
+
+footer ul:hover li:not(:hover) {
+	opacity: 0.25
 }
 
 .copyright{
 	border-top: 6px double #343a40;
 	border-bottom: 6px double #343a40;
-	margin: auto;
+	padding: 10px;
 }
-/* .div-special{
-	width: 100vw;
-	height: 10px;
-	background-color: #343a40;
-} */
