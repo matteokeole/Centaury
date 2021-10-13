@@ -148,7 +148,10 @@ main {
 @media screen and (max-width: 768px) {
 	.order-switcher {order: -1}
 	.card-container {margin: 0}
-	.image {top: 250px}
+	.image {
+		padding: 0 30px;
+		top: 250px
+	}
 }
 
 /*
