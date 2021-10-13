@@ -1,11 +1,12 @@
 /** Footer **/
 
 footer {
-	background-color: #343a40;
+	background-color: #161616;
 	color: #f8f9fa;
 	min-height: 25vh;
 	padding: 15px 0;
 	margin-top: 3rem;
+	border-top: 10px double #343a40;
 }
 
 footer div{
@@ -32,3 +33,15 @@ footer ul li:hover {
 	box-shadow: 0px 0px 10px 10px #dbedee;
 	transition: all 500ms
 }
+
+.copyright{
+	border-top: 7px double #343a40;
+	border-bottom: 7px double #343a40;
+	margin: auto;
+
+}
+/* .div-special{
+	width: 100vw;
+	height: 10px;
+	background-color: #343a40;
+} */
