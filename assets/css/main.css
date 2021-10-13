@@ -43,7 +43,7 @@ main {
 	position: absolute;
 	border-radius: 50%;
 	background-color: #333;
-	transition: ease 0.1s
+	transition: ease-out 0.2s
 }
 
 .card-container {margin-top: 100px}
