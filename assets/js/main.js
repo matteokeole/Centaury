@@ -1,3 +1,4 @@
+// Select elements
 const bannerContainer = document.querySelector(".banner-container"),
 main = document.querySelector("main"),
 scrollBall = document.querySelector(".scroll-ball"),
