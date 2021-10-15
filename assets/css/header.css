@@ -21,8 +21,8 @@ header {
 	content: "";
 	width: 0;
 	height: 1px;
-	left: 0%;
 	bottom: 0;
+	left: 0%;
 	position: absolute;
 	background-color: #fff;
 	transition-duration: 0.4s
@@ -30,7 +30,6 @@ header {
 .nav-link:hover::after {width: 100%}
 
 /* Dropdown menu button */
-
 .navbar-toggler {
 	border-color: none !important;
 	color: #fff;
@@ -38,7 +37,6 @@ header {
 }
 
 /* Dropdown menu links */
-
 .dropdown-link {
 	display: block;
 	margin: 0 10px;

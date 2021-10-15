@@ -7,7 +7,7 @@
 	align-items: center;
 	top: 0;
 	position: fixed;
-	background: indianred url(../images/saturn.jpg) center 0 no-repeat;
+	background: url(../images/saturn.jpg) center 0 no-repeat;
 	background-size: 120%
 }
 

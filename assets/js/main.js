@@ -23,8 +23,10 @@ resize = function() {
 	// Adapt the position of the main element with the banner height
 	main.style.marginTop = `${calcBannerHeight()}px`
 };
-resize();
 // Event listeners
 window.addEventListener("resize", resize);
-window.addEventListener("load", animate);
+window.addEventListener("load", function() {
+	resize(); // Resize on load
+	animate() // Then animate the banner depending on where the user is
+});
 window.addEventListener("scroll", animate)
